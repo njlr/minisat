@@ -57,13 +57,12 @@ let rec findSolutions model problem = seq {
     yield model
   else
     let atoms = extractAtoms problem
+
     let unset =
       atoms
       |> Set.filter (fun x -> model |> Map.containsKey x |> not)
 
-    match Seq.tryHead unset with
-    | None -> () // Oh no, nothing more to try
-    | Some x ->
+    for x in unset do
       for b in [ true; false] do
         if visited |> Set.contains (x, b)
         then
