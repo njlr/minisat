@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<FSharpLintSettings xmlns="https://github.com/fsprojects/FSharpLint/blob/master/ConfigurationSchema.xsd">
+  <IgnoreFiles>
+    <![CDATA[
+      assemblyinfo.*
+    ]]>
+  </IgnoreFiles>
+
+  <Analysers>
+    <Typography>
+      <Rules>
+        <Indentation>
+          <Enabled>false</Enabled>
+          <NumberOfIndentationSpaces>2</NumberOfIndentationSpaces>
+        </Indentation>
+      </Rules>
+      <Enabled>true</Enabled>
+    </Typography>
+  </Analysers>
+</FSharpLintSettings>
